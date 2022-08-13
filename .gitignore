@@ -1,0 +1,7 @@
+.idea
+dist
+*.swap
+node_modules
+gulpfile.js
+gulp
+*.md
