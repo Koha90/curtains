@@ -1,8 +1,0 @@
-@media (max-width: 320px) {
-
-    .header {
-        display: grid;
-        grid-template-rows: 50px;
-        grid-template-columns: 1fr minmax(auto, 312px) minmax(auto, 40px) 1fr;
-    }
-}

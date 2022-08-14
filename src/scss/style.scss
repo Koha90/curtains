@@ -1,3 +1,7 @@
 @import "fonts";
 @import "reset";
-@import "prt_stls/header.css";
+@import "prt_stls/header";
+
+* {
+  font-family: Roboto, sans-serif;
+}

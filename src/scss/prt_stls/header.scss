@@ -1,0 +1,51 @@
+@media (max-width: 320px) {
+
+  .header {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr minmax(auto, 280px) minmax(auto, 40px) 1fr;
+    grid-column-gap: 10px;
+
+    .header__logo {
+      grid-column: 2;
+
+      img {
+        width: 160px;
+        height: 50px;
+      }
+    }
+
+    .header__menu {
+      display: none;
+    }
+
+    .burger {
+      grid-column: 3;
+      display: block;
+      position: relative;
+
+      > span,
+      > span::before,
+      > span::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 2px;
+        background-color: black;
+        border: 1px black;
+      }
+
+      > span::before {
+        top: -15px;
+      }
+
+      > span::after {
+        top: 15px;
+      }
+
+      > span {
+        top: 50%;
+      }
+    }
+  }
+}
